@@ -3,7 +3,19 @@
     display: flex;
     gap: 1rem;
 }
-.btn.order {
+.btn{
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-order {
     background-color: #d32f2f;
     color: white;
+}
+.btn-order:hover {
+    background-color: #b71c1c;
 }
