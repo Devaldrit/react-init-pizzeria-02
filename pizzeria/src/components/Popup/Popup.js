@@ -1,5 +1,16 @@
 import classes from "./Popup.module.css";
+import { useState } from 'react';
+
 export function Popup(props){
+    const [numero, setNumero] = useState(0);
+    function decreaseHandler(){
+        setNumero(numero - 1)
+    }
+    
+    function increaseHandler(){
+        setNumero(numero + 1)
+    }
+    
     return(
         <div className={classes["modal"]} style={{display: "block"}}>
             <div className={classes["modal-content"]}>
@@ -8,9 +19,9 @@ export function Popup(props){
                 <h2 className={classes["modal-title"]}>test</h2>
                 <p className={classes["modal-price"]}>Test</p>
                 <div className={classes["quantity-selector"]}>
-                    <button className={classes["quantity-decrease"]}>-</button>
-                    <span className={classes["quantity"]}>1</span>
-                    <button className={classes["quantity-increase"]}>+</button>
+                    <button className={classes["quantity-decrease"]} onClick={decreaseHandler}>-</button>
+                    <span className={classes["quantity"]}>{numero}</span>
+                    <button className={classes["quantity-increase"]} onClick={increaseHandler}>+</button>
                 </div>
                 <button className={classes["add-to-cart"]}>Ajouter au panier</button>
             </div>
