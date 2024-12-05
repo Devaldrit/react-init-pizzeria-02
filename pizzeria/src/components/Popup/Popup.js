@@ -8,7 +8,6 @@ export function Popup(props){
                 <h2 className={classes["modal-title"]}>Calzone</h2>
                 <p className={classes["modal-price"]}>15.90 €</p>
                 <div className={classes["quantity-selector"]}>
-                    {/* <button className={classes["quantity-decrease"]}>-</button> */}
                     <span className={classes["quantity"]}>1</span>
                     {/* <button className={classes["quantity-increase"]}>+</button> */}
                 </div>
