@@ -4,14 +4,11 @@ export function Popup(props){
         <div className={classes["modal"]} style={{display: "block"}}>
             <div className={classes["modal-content"]}>
                 <span className={classes["close"]}>x</span>
-                <img className={classes["modal-thumbnail"]} src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&amp;auto=format" alt="Pizza Image"/>
-                <h2 className={classes["modal-title"]}></h2>
-                <p className={classes["modal-price"]}></p>
+                {/* <img className={classes["modal-thumbnail"]} src="#?w=500&amp;auto=format" alt="Pizza Image"/> */}
+                <h2 className={classes["modal-title"]}>test</h2>
+                <p className={classes["modal-price"]}>Test</p>
                 <div className={classes["quantity-selector"]}>
-<<<<<<< HEAD
-=======
                     <button className={classes["quantity-decrease"]}>-</button>
->>>>>>> c7ed0145b5aad9a85f127291f499a1e9ba325f3c
                     <span className={classes["quantity"]}>1</span>
                     <button className={classes["quantity-increase"]}>+</button>
                 </div>

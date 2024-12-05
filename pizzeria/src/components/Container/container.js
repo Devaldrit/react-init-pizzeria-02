@@ -1,5 +1,4 @@
 import Card from "../Card/Card";
-import Aside from "../Basket/Basket";
 import classes from "./container.module.css";
 const users = [
     {
@@ -46,7 +45,6 @@ export function Container(){
     return(
         <section className={classes["main-container"]}>
             {userTableau}
-            <Aside/>
         </section>
     );
 }
