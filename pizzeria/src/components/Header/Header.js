@@ -5,6 +5,6 @@ export function Header(){
         <h1>Pizzeria</h1>
         <p>Les meilleures pizzas artisanales</p>
     </header>
-    )
+    );
 }
-export default Header
+export default Header;

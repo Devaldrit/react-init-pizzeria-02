@@ -1,17 +1,21 @@
 import classes from "./Popup.module.css";
 export function Popup(props){
     return(
-        <div className={classes["modal"]} style="display: block;">
+        <div className={classes["modal"]} style={{display: "block"}}>
             <div className={classes["modal-content"]}>
-                <span className={classes["close"]}>×</span>
+                <span className={classes["close"]}>x</span>
                 <img className={classes["modal-thumbnail"]} src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&amp;auto=format" alt="Pizza Image"/>
-                <h2 className={classes["modal-title"]}>Calzone</h2>
-                <p className={classes["modal-price"]}>15.90 €</p>
+                <h2 className={classes["modal-title"]}></h2>
+                <p className={classes["modal-price"]}></p>
                 <div className={classes["quantity-selector"]}>
+<<<<<<< HEAD
+=======
+                    <button className={classes["quantity-decrease"]}>-</button>
+>>>>>>> c7ed0145b5aad9a85f127291f499a1e9ba325f3c
                     <span className={classes["quantity"]}>1</span>
-                    {/* <button className={classes["quantity-increase"]}>+</button> */}
+                    <button className={classes["quantity-increase"]}>+</button>
                 </div>
-                {/* <button className={classes["btn add-to-cart"]}>Ajouter au panier</button> */}
+                <button className={classes["add-to-cart"]}>Ajouter au panier</button>
             </div>
         </div>
     );
