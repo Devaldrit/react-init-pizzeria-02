@@ -1,6 +1,6 @@
 import classes from "./Card.module.css";
 import Button from "../Button/Button";
-export function Card(props) {
+export function Card({props, pizza, onGetPizza}) {
     return(
         <div className={classes["pizza-card"]}>
                 <img src={props.imgLink} alt={props.alt}/>
